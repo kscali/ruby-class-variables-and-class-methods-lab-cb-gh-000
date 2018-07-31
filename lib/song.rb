@@ -8,6 +8,7 @@ class Song
   def initialize 
     @@count +=1
     @@genres << genre unless @@genre.include?(genre)
+    
   end   
   
   def self.count
