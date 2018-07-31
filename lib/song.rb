@@ -10,7 +10,7 @@ class Song
     @artist = artist 
     @genre = genre 
     @@count +=1
-    @@genres << genre unless @@genres.include?(genre)
+    @@genres 
     @@artists << artist unless @@artists.include?(artist)
   end   
   
@@ -19,7 +19,7 @@ class Song
   end 
   
   def genres 
-    
+    @@genres << genre unless @@genres.include?(genre)
   end   
   
   def genre_count
