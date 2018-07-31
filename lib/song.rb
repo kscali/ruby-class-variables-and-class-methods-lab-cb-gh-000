@@ -7,7 +7,7 @@ class Song
   
   def initialize(nane, artist, genre) 
     @@count +=1
-    @@genres << genre unless @@genre.include?(genre)
+    @@genres << genre unless @@genres.include?(genre)
     @@artists << artist unless @@artists.include?(artist)
   end   
   
